@@ -1,0 +1,50 @@
+{
+  "name": "luart-node",
+  "version": "0.0.1",
+  "luartVersion": "1.9.0",
+  "description": "Make luart easy to interact with nodejs.",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wll8/luart-node.git"
+  },
+  "homepage": "https://github.com/wll8/luart-node",
+  "bin": {
+    "luart-node": "./dist/bin.cjs",
+    "luart": "./dist/luaRT/bin/luart.exe",
+    "wluart": "./dist/luaRT/bin/wluart.exe",
+    "rtc": "./dist/luaRT/bin/rtc.exe"
+  },
+  "scripts": {
+    "build": "node build.js",
+    "dev": "pnpm build && rollup --config rollup.config.js -w",
+    "test": "node test/index.mjs"
+  },
+  "keywords": [
+    "luart"
+  ],
+  "files": [
+    "dist",
+    "test"
+  ],
+  "author": "wll8",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "rollup": "^4.17.2"
+  },
+  "dependencies": {
+    "7zip-bin": "^5.2.0",
+    "shelljs": "^0.8.5",
+    "shx": "^0.3.4"
+  }
+}

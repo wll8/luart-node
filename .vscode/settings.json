@@ -1,0 +1,9 @@
+{
+  "code-runner.executorMapByGlob": {
+    "*.lua": "cd $dir && wluart $fileName ",
+    "*.wlua": "cd $dir && wluart $fileName "
+  },
+  "files.associations": {
+    "*.wlua": "lua"
+  }
+}

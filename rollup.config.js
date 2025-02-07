@@ -1,0 +1,47 @@
+import { defineConfig } from 'rollup';
+
+import { nodeResolve } from '@rollup/plugin-node-resolve'
+import { createRequire } from 'module';
+const pkg = createRequire(import.meta.url)(`./package.json`);
+
+// rollup.config.mjs
+export default defineConfig([
+  {
+    input: './src/index.js',
+    output: [
+      {
+        file: pkg.main,
+        format: 'cjs',
+        exports: `named`,
+        sourcemap: true,
+      },
+      {
+        file: pkg.module,
+        format: 'esm',
+        sourcemap: true,
+      },
+    ],
+    plugins: [
+      nodeResolve({
+        preferBuiltins: true, // 使用内置模块而不是同名模块
+      }),
+    ],
+  },
+  {
+    input: './src/bin.js',
+    output: [
+      {
+        file: `dist/bin.cjs`,
+        format: 'cjs',
+        exports: `named`,
+        sourcemap: true,
+        inlineDynamicImports: true,
+      },
+    ],
+    plugins: [
+      nodeResolve({
+        preferBuiltins: true, // 使用内置模块而不是同名模块
+      }),
+    ],
+  }
+])
