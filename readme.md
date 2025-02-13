@@ -18,6 +18,7 @@ If you need to configure the bin directory in environment variables, its locatio
 For programmatic invocation:
 
 ```js
+// npm i luart-node
 const { getPath } = require(`luart-node`)
 getPath(`rtc`) // Pass in the command, returns the file path
 ```
