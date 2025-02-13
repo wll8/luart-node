@@ -1,5 +1,5 @@
 {
-  "name": "luart-node",
+  "name": "luart",
   "version": "0.0.1",
   "luartVersion": "1.9.0",
   "description": "Make luart easy to interact with nodejs.",
@@ -15,9 +15,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/wll8/luart-node.git"
+    "url": "git://github.com/wll8/luart.git"
   },
-  "homepage": "https://github.com/wll8/luart-node",
+  "homepage": "https://github.com/wll8/luart",
   "bin": {
     "luart-node": "./dist/bin.cjs",
     "luart": "./dist/luaRT/bin/luart.exe",

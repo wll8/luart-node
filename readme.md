@@ -1,10 +1,10 @@
-## luart-node
+## luart
 
 Facilitates interaction between luart and nodejs by extracting files from https://github.com/samyeyo/LuaRT/releases/ and packaging them as an npm package.
 
 ## Usage
 
-Install like any other npm package, e.g., `npm i luart-node`.
+Install like any other npm package, e.g., `npm i -g luart`.
 
 After installation, the following commands are available:
 
@@ -13,7 +13,7 @@ After installation, the following commands are available:
 - wluart -- for running windowed programs
 - rtc -- for compiling programs
 
-If you need to configure the bin directory in environment variables, its location is `node_modules/luart-node/luaRT/bin/`.
+If you need to configure the bin directory in environment variables, its location is `node_modules/luart/luaRT/bin/`.
 
 For programmatic invocation:
 
