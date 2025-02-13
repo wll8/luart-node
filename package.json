@@ -1,6 +1,6 @@
 {
   "name": "luart",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "luartVersion": "1.9.0",
   "description": "Make luart easy to interact with nodejs.",
   "types": "./dist/index.d.ts",
@@ -19,15 +19,12 @@
   },
   "homepage": "https://github.com/wll8/luart",
   "bin": {
-    "luart-node": "./dist/bin.cjs",
-    "luart": "./dist/luaRT/bin/luart.exe",
-    "wluart": "./dist/luaRT/bin/wluart.exe",
-    "rtc": "./dist/luaRT/bin/rtc.exe"
+    "luart": "./dist/luaRT/bin/luart.exe"
   },
   "scripts": {
     "build": "node build.js",
     "dev": "pnpm build && rollup --config rollup.config.js -w",
-    "test": "node test/index.mjs"
+    "test": ".\\dist\\luaRT\\bin\\luart.exe"
   },
   "keywords": [
     "luart"

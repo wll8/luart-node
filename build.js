@@ -24,7 +24,6 @@ new Promise(async () => {
   util.exec(`npx shx rm -rf dist`)
   util.exec(`npx shx mkdir dist`)
   util.exec(`npx shx cp -r temp/luaRT dist/luaRT`)
-  util.exec(`npx shx cp -r .vscode dist/.vscode`)
   util.exec(`npx rollup --config rollup.config.js`)
 })
 

@@ -26,22 +26,5 @@ export default defineConfig([
         preferBuiltins: true, // 使用内置模块而不是同名模块
       }),
     ],
-  },
-  {
-    input: './src/bin.js',
-    output: [
-      {
-        file: `dist/bin.cjs`,
-        format: 'cjs',
-        exports: `named`,
-        sourcemap: true,
-        inlineDynamicImports: true,
-      },
-    ],
-    plugins: [
-      nodeResolve({
-        preferBuiltins: true, // 使用内置模块而不是同名模块
-      }),
-    ],
   }
 ])
