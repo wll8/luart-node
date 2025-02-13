@@ -4,7 +4,7 @@ Facilitates interaction between luart and nodejs by extracting files from https:
 
 ## Usage
 
-Install like any other npm package, e.g., `npm i luart-node`.
+Install like any other npm package, e.g., `npm i -g luart-node`.
 
 After installation, the following commands are available:
 
@@ -18,6 +18,7 @@ If you need to configure the bin directory in environment variables, its locatio
 For programmatic invocation:
 
 ```js
+// npm i luart-node
 const { getPath } = require(`luart-node`)
 getPath(`rtc`) // Pass in the command, returns the file path
 ```
