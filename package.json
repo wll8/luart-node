@@ -15,9 +15,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/wll8/luart.git"
+    "url": "https://github.com/wll8/luart-node"
   },
-  "homepage": "https://github.com/wll8/luart",
+  "homepage": "https://github.com/wll8/luart-node",
   "bin": {
     "luart": "./dist/luaRT/bin/luart.exe"
   },
