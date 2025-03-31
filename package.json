@@ -1,7 +1,7 @@
 {
   "name": "luart-node",
-  "version": "0.0.1",
-  "luartVersion": "1.9.0",
+  "version": "0.0.2",
+  "luartVersion": "1.9.5",
   "description": "Make luart easy to interact with nodejs.",
   "types": "./dist/index.d.ts",
   "type": "module",

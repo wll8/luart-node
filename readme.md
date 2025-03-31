@@ -36,6 +36,8 @@ $ luart-node <c|compile> <path>
 
 ## Development
 
+Notice: To update the luart version, clear the ./temp directory
+
 ```bat
 :: Install dependencies
 pnpm i
